@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DineDash.Infrastructure", "DineDash.Infrastructure\DineDash.Infrastructure.csproj", "{53A80B62-7537-4C30-8564-ED7461EF56E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DineDash.Domain", "DineDash.Domain\DineDash.Domain.csproj", "{EE776486-5C47-4BB7-A715-823652A0E8FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DineDash.Contracts", "DineDash.Contracts\DineDash.Contracts.csproj", "{C5F9B098-781B-46CA-92BB-9FC2058E4774}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DineDash.Application", "DineDash.Application\DineDash.Application.csproj", "{CEE0C742-BF41-4A7E-8314-128D511247F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DineDash.Api", "DineDash.Api\DineDash.Api.csproj", "{77E784DB-90B6-4AE5-8112-5728B7554F58}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{53A80B62-7537-4C30-8564-ED7461EF56E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53A80B62-7537-4C30-8564-ED7461EF56E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53A80B62-7537-4C30-8564-ED7461EF56E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53A80B62-7537-4C30-8564-ED7461EF56E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE776486-5C47-4BB7-A715-823652A0E8FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE776486-5C47-4BB7-A715-823652A0E8FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE776486-5C47-4BB7-A715-823652A0E8FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE776486-5C47-4BB7-A715-823652A0E8FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5F9B098-781B-46CA-92BB-9FC2058E4774}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5F9B098-781B-46CA-92BB-9FC2058E4774}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5F9B098-781B-46CA-92BB-9FC2058E4774}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5F9B098-781B-46CA-92BB-9FC2058E4774}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEE0C742-BF41-4A7E-8314-128D511247F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEE0C742-BF41-4A7E-8314-128D511247F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEE0C742-BF41-4A7E-8314-128D511247F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEE0C742-BF41-4A7E-8314-128D511247F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77E784DB-90B6-4AE5-8112-5728B7554F58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77E784DB-90B6-4AE5-8112-5728B7554F58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77E784DB-90B6-4AE5-8112-5728B7554F58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77E784DB-90B6-4AE5-8112-5728B7554F58}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
