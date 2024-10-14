@@ -1,0 +1,9 @@
+POST {{apiHostUrl}}/auth/register
+Content-Type: application/json
+
+{
+    "firstName": "Dagmawi",
+    "lastName": "Wegayehu",
+    "email": "dagtef@gmail.com",
+    "password": "1234"
+}
