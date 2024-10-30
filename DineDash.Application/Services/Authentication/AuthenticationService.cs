@@ -1,6 +1,7 @@
 using DineDash.Application.Common.Interfaces.Authentication;
 using DineDash.Application.Common.Interfaces.Persistence;
 using DineDash.Domain.Entities;
+using FluentResults;
 
 namespace DineDash.Application.Services.Authentication;
 
@@ -19,7 +20,7 @@ public class AuthenticationService : IAuthenticationService
         _userRepository = userRepository;
     }
 
-    public AuthenticationResult Register(
+    public Result<AuthenticationResult> Register(
         string firstName,
         string lastName,
         string email,
@@ -29,7 +30,7 @@ public class AuthenticationService : IAuthenticationService
         // Check if user exists
         if (_userRepository.GetUserByEmail(email) is not null)
         {
-            throw new Exception("User already exists");
+            return Result.Fail<AuthenticationResult>(new[] { new DuplicateEmailError() });
         }
 
         // Create a user
@@ -50,7 +51,7 @@ public class AuthenticationService : IAuthenticationService
         return new AuthenticationResult(user, token);
     }
 
-    public AuthenticationResult Login(string email, string password)
+    public Result<AuthenticationResult> Login(string email, string password)
     {
         // Check if user exists
         if (_userRepository.GetUserByEmail(email) is not User user)
